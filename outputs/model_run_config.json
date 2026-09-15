@@ -1,0 +1,22 @@
+{
+  "python": "3.14.4",
+  "ultralytics": "8.4.153",
+  "torch": "2.14.0+cpu",
+  "lap": "0.5.13",
+  "model": "yolo26n.pt",
+  "clip": "data/clips/clip_01",
+  "classes": [2, 5, 7],
+  "class_names": ["car", "bus", "truck"],
+  "conf": 0.25,
+  "iou": 0.7,
+  "imgsz": 960,
+  "device": "cpu",
+  "control_tracker": "bytetrack.yaml",
+  "treatment_tracker": "configs/trackers/botsort-reid.yaml",
+  "treatment_with_reid": true,
+  "treatment_gmc_method": "none",
+  "outputs": {
+    "control": "outputs/model_bytetrack_clip_01.txt",
+    "treatment": "outputs/model_reid_clip_01.txt"
+  }
+}
